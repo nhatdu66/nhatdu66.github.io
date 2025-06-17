@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Trang Web của Nhatdu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">Nhatdu Web</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">Giới thiệu</a></li>
+        <li><a href="#contact">Liên hệ</a></li>
+      </ul>
+      <!-- Nút hiển thị menu khi trên mobile -->
+      <button id="toggleMenu">&#9776;</button>
+      <!-- Nút chuyển đổi Dark Mode -->
+      <button id="darkModeToggle">Dark Mode</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Phần hero (trang chủ) -->
+    <section id="home">
+      <div class="hero">
+        <h1>Chào mừng đến với trang web của Nhatdu!</h1>
+        <p>Trải nghiệm giao diện hiện đại với HTML, CSS và JavaScript.</p>
+        <button id="actionButton">Click Me!</button>
+      </div>
+    </section>
+
+    <!-- Phần giới thiệu -->
+    <section id="about">
+      <div class="content">
+        <h2>Giới thiệu</h2>
+        <p>
+          Website này được xây dựng hoàn toàn từ HTML, CSS và JavaScript.
+          Bạn có thể trải nghiệm Dark Mode, menu responsive, và các hiệu ứng tương tác.
+        </p>
+      </div>
+    </section>
+
+    <!-- Phần liên hệ -->
+    <section id="contact">
+      <div class="content">
+        <h2>Liên hệ</h2>
+        <form id="contactForm">
+          <label for="name">Họ tên:</label>
+          <input type="text" id="name" name="name" required>
+          
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          
+          <label for="message">Nội dung:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+          
+          <button type="submit">Gửi</button>
+        </form>
+        <div id="formResponse"></div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Nhatdu. All rights reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
