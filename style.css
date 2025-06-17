@@ -1,0 +1,202 @@
+/* Reset một số cài đặt mặc định */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  color: #333;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Header và Navigation */
+header {
+  background: #008CBA;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+}
+
+/* Nút hiển thị menu trên mobile */
+#toggleMenu {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  color: white;
+}
+
+/* Nút chuyển đổi Dark Mode */
+#darkModeToggle {
+  margin-left: 15px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #008CBA;
+  font-weight: bold;
+}
+
+/* Phần hero với hình nền */
+.hero {
+  padding: 60px 20px;
+  text-align: center;
+  background: url('https://via.placeholder.com/1200x400') no-repeat center;
+  background-size: cover;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+}
+
+#actionButton {
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border: none;
+  background-color: #005f75;
+  color: white;
+  border-radius: 5px;
+}
+
+#actionButton:hover {
+  background-color: #003e50;
+}
+
+/* Các section khác */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  font-size: 2em;
+}
+
+section p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+/* Form liên hệ */
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+form button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button[type="submit"]:hover {
+  background-color: #005f75;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+/* Responsive cho Navigation */
+@media (max-width: 768px) {
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    display: none;
+  }
+  
+  .nav-links.show {
+    display: flex;
+  }
+  
+  #toggleMenu {
+    display: block;
+  }
+}
+
+/* Dark Mode */
+body.dark {
+  background: #121212;
+  color: #e0e0e0;
+}
+
+body.dark header {
+  background: #1f1f1f;
+}
+
+body.dark .nav-links li a {
+  color: #e0e0e0;
+}
+
+body.dark #darkModeToggle {
+  background-color: #333;
+  color: #e0e0e0;
+}
+
+body.dark footer {
+  background: #1f1f1f;
+}
